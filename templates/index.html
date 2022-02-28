@@ -1,0 +1,325 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+
+<title>Saurabh Portfolio</title>
+
+{% endblock %}
+
+{% block body %}
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#aboutme">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#workexperience">Work Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Hey I am Saurabh!</div>
+                <div class="masthead-heading text-uppercase">Thanks for Visiting</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#aboutme">Know More</a>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section bg-light" id="aboutme">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About Me</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+                </div>
+                <div class="row">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{{ url_for('static', filename='assets/img/profile/profilepic_2.jpg')}}" alt="..." />
+                            <!--{{ url_for('static', filename='assets/img/profile/profilepic_1.jpg')}} -->
+                            <h4>Saurabh Nair</h4>
+                            <p class="text-muted">Student</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.xing.com/profile/Saurabh_Nair/cv"><i class="fab fa-xing"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/saurabh-nair-8449591a0/"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/saurabh._.nair/"><i class="fab fa-instagram"></i></a>
+
+                        </div>
+
+                </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+
+                            <div class="timeline-body"><p style = "text-align: justify; text-justify: inter-word;" class="text-muted">I am enthusiastic and encouraged to immensely develop skills and keep myself updated to expand professionally. I have excellent time management skills combined with a good knowledge of the data analysis and data retrieval. At present in 2nd semester of master's in Web and Data science at University of Koblenz-Landau and looking up for job to grow my skills</p></div>
+                            <div class="timeline-body"><p style = "text-align: justify; text-justify: inter-word;">Contact me via</b></p></div>
+                            <div class="timeline-body"><p style = "text-align: justify; text-justify: inter-word;">Email: <b>saurabhnair2391999@gmail.com</b></p></div>
+                            <div class="timeline-body"><p style = "text-align: justify; text-justify: inter-word;">Phone: <b>+49(0) 15737926819</b></p></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                   <!-- <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div> -->
+
+                </div>
+            </div>
+        </section>
+        <!-- Work Experience-->
+        <section class="page-section" id="workexperience">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Work Experience</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{ url_for('static', filename='assets/img/workexp/xaviers.png')}}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2019-2020</h4>
+                                <h4 class="subheading">St. Xavier's College</h4>
+                                <h6 class="subheading">Software Development Intern</h6>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted"> Developed Admin Panel in PHP and iOS mobile application for students and faculty.</p></div>
+                            <div class="timeline-body"><p class="text-muted"> Created dashboard for administrative department and managed database using SQL.</p></div>
+                            <div class="timeline-body"><p class="text-muted"> Special PHP based web portal for faculty to take attendance and to upload assignment.</p></div>
+                            <div class="timeline-body"><p class="text-muted"> Worked with software project documentation using UML diagrams.</p></div>
+
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{ url_for('static', filename='assets/img/workexp/wtw_1.jpg')}}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2018-2019</h4>
+                                <h4 class="subheading">WaytoWeb Pvt. Lmt.</h4>
+                                <h6 class="subheading">Intern</h6>
+                            </div>
+                            <div class="timeline-body">Developed Admin panel for Admin using PHP, HTML and CSS.<p class="text-muted"></p></div>
+                            <div class="timeline-body">Created iOS mobile application for users using swift and connecting it with database.<p class="text-muted"></p></div>
+                            <div class="timeline-body">Worked with both kind of database SQl and NoSql.<p class="text-muted"></p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Journey
+                                <br />
+                                Starts from
+                                <br />
+                                Here!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Project -->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Projects</h2>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" width="100%" src="{{ url_for('static', filename='assets/img/project/bf_1.jpg')}}" alt="..." />
+                                <!--{{ url_for('static', filename='assets/img/project/bf.jpg')}}-->
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading"><a href="{{ url_for('blackfriday') }}">Black Friday Prediction System</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" width="100%"  src="{{ url_for('static', filename='assets/img/project/loan_1.jpeg')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading"><a href="{{ url_for('loan') }}">Loan Prediction System</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--Education-->
+        <section class="page-section" id="education">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Educational Journey</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{ url_for('static', filename='assets/img/education/koblenz.png')}}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2021-present</h4>
+                                <h4 class="subheading">University Of Koblenz-Landau,Germany</h4>
+                                <h6 class="subheading">Msc. Web and Data Science</h6>
+                            </div>
+                            </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{ url_for('static', filename='assets/img/workexp/xaviers.png')}}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2017-2020</h4>
+                                <h4 class="subheading">St. Xavier's College,India</h4>
+                                <h6 class="subheading">Bachelor's in Computer Application</h6>
+                            </div>
+                            </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Educational
+                                <br/>
+                                Journey
+                                <br />
+                                Starts from
+                                <br />
+                                Here!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Blogs-->
+        <section class="page-section bg-light" id="blogs">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Blogs</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{{ url_for('static', filename='assets/img/blogs/pandas.jpg')}}" alt="..." />
+                            <h4><a style="color:black;" href="https://blog.ineuron.ai/Pandas-for-beginners-Bn1GpdIZeg">Pandas for Beginners</a></h4>
+                            <p class="text-muted"">Describes how pandas helps in analyzing and manipulating datasets.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{{ url_for('static', filename='assets/img/blogs/DV.png')}}" alt="..." />
+                            <h4><a style="color:black;" href="https://blog.ineuron.ai/Data-visualization-from-scratch-j2AvRbi2rl">Data Visualization from Scratch</a></h4>
+                            <p class="text-muted">Data visualization using Matplotlib, Plotly, Cufflinks and Seaborn library.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{{ url_for('static', filename='assets/img/blogs/lr.png')}}" alt="..." />
+                            <h4><a style="color:black;" href="https://blog.ineuron.ai/Logistic-Regression-4N6Hmhqchf">Logistic Regression</a></h4>
+                            <p class="text-muted">Explanation of logic behind Logistic Regression and its implementation.</p>
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{ url_for('static', filename='assets/img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Black Friday Prediction System</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/project/bf.jpg')}}" alt="..." />
+                                    <p><b>Problem Statement:</b> The dataset here is a sample of the transactions made in a retail store. The store wants to know better the customer purchase behaviour against different products. Specifically, here the problem is a regression problem where we are trying to predict the dependent variable (the amount of purchase) with the help of the information contained in the other variables.
+Classification problem can also be settled in this dataset since several variables are categorical, and some other approaches could be "Predicting the age of the consumer" or even "Predict the category of goods bought". This dataset is also particularly convenient for clustering and maybe find different clusters of consumers within it.</p>
+                                    <p><b>Dataset source:</b> <a href="https://datahack.analyticsvidhya.com/contest/black-friday/">Analytics Vidhya</a></p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Regression Based Problem
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{ url_for('static', filename='assets/img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Loan Prediction System</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/project/loan.jpeg')}}" alt="..." />
+                                    <p><b>Problem Statement: </b>A Company wants to automate the loan eligibility process (real time) based on customer detail provided while filling online application form. These details are Gender, Marital Status, Education, Number of Dependents, Income, Loan Amount, Credit History and others. To automate this process, they have given a problem to identify the customers’ segments, those are eligible for loan amount so that they can specifically target these customers.</p>
+                                    <!--<p><b>Dataset source:</b> <a href="https://datahack.analyticsvidhya.com/contest/black-friday/">Analytics Vidhya</a></p>-->
+                                    <p><b>Dataset source:</b> <a href="https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-dataset">Kaggle</a></p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Classification Problem
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{ url_for('static', filename='js/scripts.js')}}"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+{% endblock %}
